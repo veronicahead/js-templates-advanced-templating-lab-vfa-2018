@@ -1,12 +1,12 @@
-      function createRecipe() {
-        document.getElementById("recipe-template").innerHTML
-      }
-      function displayEditForm() {
-        document.getElementById("recipe-form-template").innerHTML
-        function updateRecipe() {
-          document.getElementById("recipe-template").innerHTML
-        }
-      }
+function createRecipe() {
+  document.getElementById("recipe-template").innerHTML
+}
+function displayEditForm() {
+  document.getElementById("recipe-form-template").innerHTML
+  function updateRecipe() {
+    document.getElementById("recipe-template").innerHTML
+  }
+}
 
 function init() {
   //put any page initialization/handlebars initialization here

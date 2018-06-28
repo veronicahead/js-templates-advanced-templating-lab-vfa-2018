@@ -20,21 +20,12 @@
       </form>
           <!-- Number 1: has recipe form template -->
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form id="recipe-form" onsubmit="createRecipe()">
-        Name: <input type="text" id="name" name="name">
-        Description: <input type="text" name="description">
-        Ingredients: <input type="text" name="ingredients">
-        <input type="text" name="ingredients">
-        <input type="text" name="ingredients">
-        <input type="text" name="ingredients">
-        <input type="text" name="ingredients">
-        <input type="submit">
-      </form>
+      document.getElementById("recipe-form")
     </script>
     <!-- Number 2: has recipe-template, calls name, renders recipeDetailsPartial -->
     <script id="recipe-template" type="text/x-handlebars-template">
       {{ name }}
-      <a href="displayEditForm()">Edit Recipe</a>
+      <a href="#" onclick="displayEditForm()">Edit Recipe</a>
       {{> recipeDetailsPartial }}
     </script>
     <script id="recipe-details-partial" type="text/x-handlebars-template">
@@ -48,12 +39,11 @@
       }
       function displayEditForm() {
         document.getElementById("recipe-form-template").innerHTML
-      }
-      function updateRecipe() {
-        document.getElementById("recipe-template").innerHTML
+        function updateRecipe() {
+          document.getElementById("recipe-template").innerHTML
+        }
       }
     </script>
-
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
